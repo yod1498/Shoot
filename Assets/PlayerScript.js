@@ -21,7 +21,7 @@ function Update () {
       if (weapon != null)
       {
         weapon.Attack();
-        audio.Play();
+        GetComponent.<AudioSource>().Play();
       }
 	} 
 }
@@ -29,5 +29,5 @@ function Update () {
 
 function FixedUpdate(){
     // 5 - Move the game object
-    rigidbody2D.velocity = movement;
+    GetComponent.<Rigidbody2D>().velocity = movement;
 } 

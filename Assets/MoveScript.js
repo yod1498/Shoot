@@ -11,5 +11,5 @@ function Update () {
 }
 
 function FixedUpdate(){
-    rigidbody2D.velocity = movement;
+    GetComponent.<Rigidbody2D>().velocity = movement;
 } 
